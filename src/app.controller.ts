@@ -3,7 +3,7 @@ import { Controller, Get } from '@nestjs/common';
 @Controller()
 export class AppController {
   @Get()
-  getHello(): { version: number } {
+  getHello(): { version: any } {
     return { version: process.env.npm_package_version };
   }
 }
